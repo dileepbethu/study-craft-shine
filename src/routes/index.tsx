@@ -45,7 +45,7 @@ function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-14">
-            <a href="https://etsy.com" target="_blank" rel="noreferrer" className="btn-primary">
+            <a href="https://edennelife.etsy.com" target="_blank" rel="noreferrer" className="btn-primary">
               Buy the Blueprint — £29
             </a>
             <Link to="/reset" className="btn-ghost">
