@@ -28,8 +28,8 @@ export function Footer() {
             <div className="eyebrow mb-5">Connect</div>
             <ul className="space-y-3" style={{ fontSize: 14, color: "var(--color-parchment)" }}>
               <li><a href="mailto:hello@edennelife.co" className="hover:text-[color:var(--color-champagne)] transition-colors">hello@edennelife.co</a></li>
-              <li><a href="https://instagram.com/edennelife" target="_blank" rel="noreferrer" className="hover:text-[color:var(--color-champagne)] transition-colors">Instagram</a></li>
-              <li><a href="https://pinterest.com" target="_blank" rel="noreferrer" className="hover:text-[color:var(--color-champagne)] transition-colors">Pinterest</a></li>
+              <li><a href="https://www.instagram.com/edennelife?igsh=MWtwbDV1ajB4b3hhaA%3D%3D&utm_source=qr" target="_blank" rel="noreferrer" className="hover:text-[color:var(--color-champagne)] transition-colors">Instagram</a></li>
+              <li><a href="https://pin.it/7GBZKUH9L" target="_blank" rel="noreferrer" className="hover:text-[color:var(--color-champagne)] transition-colors">Pinterest</a></li>
             </ul>
           </div>
         </div>
