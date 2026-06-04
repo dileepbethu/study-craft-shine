@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/edenne/Header";
 import { Footer } from "@/components/edenne/Footer";
 import { EmailForm } from "@/components/edenne/EmailForm";
+import { ETSY_URL } from "@/lib/edenne";
 
 export const Route = createFileRoute("/blueprint")({
   component: Blueprint,
@@ -75,7 +76,7 @@ function Blueprint() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-14">
-            <a href="https://edennelife.etsy.com" target="_blank" rel="noreferrer" className="btn-primary">Buy on Etsy — £29</a>
+            <a href={ETSY_URL} target="_blank" rel="noreferrer" className="btn-primary">Buy on Etsy — £29</a>
             <Link to="/reset" className="btn-ghost">Try the free 5-day reset</Link>
           </div>
         </div>
@@ -158,7 +159,7 @@ function Blueprint() {
             Instant download. No subscription. No expiry.
           </p>
           <div className="mt-12">
-            <a href="https://etsy.com" target="_blank" rel="noreferrer" className="btn-on-dark">Buy the Blueprint — £29</a>
+            <a href={ETSY_URL} target="_blank" rel="noreferrer" className="btn-on-dark">Buy the Blueprint — £29</a>
           </div>
         </div>
       </section>
