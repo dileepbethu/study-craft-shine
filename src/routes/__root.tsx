@@ -78,8 +78,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Edenne Life — The Executive Reset Blueprint" },
       { property: "og:description", content: "A structured lifestyle system for the woman who holds herself to a higher standard." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
+      { property: "og:image", content: "https://edennelife.co/og-image.png" },
+      { property: "og:url", content: "https://edennelife.co" },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@edennelife" },
+      { name: "twitter:image", content: "https://edennelife.co/og-image.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -91,6 +94,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         href: appCss,
+      },
+    ],
+    scripts: [
+      {
+        children:
+          "(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');ml('account','2352996');",
       },
     ],
   }),

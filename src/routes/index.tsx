@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/edenne/Header";
 import { Footer } from "@/components/edenne/Footer";
-import { EmailForm } from "@/components/edenne/EmailForm";
+import { ETSY_URL } from "@/lib/edenne";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -26,6 +26,7 @@ const forYou = [
   ["You perform above your title", "but your personal systems don't."],
   ["You want structure,", "not motivation that fades by Thursday."],
   ["You are building a life", "that matches your professional standard."],
+  ["You are not starting over.", "You are raising the floor."],
 ];
 
 function Home() {
@@ -45,7 +46,7 @@ function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-14">
-            <a href="https://edennelife.etsy.com" target="_blank" rel="noreferrer" className="btn-primary">
+            <a href={ETSY_URL} target="_blank" rel="noreferrer" className="btn-primary">
               Buy the Blueprint — £29
             </a>
             <Link to="/reset" className="btn-ghost">
@@ -105,28 +106,6 @@ function Home() {
         </div>
       </section>
 
-      {/* QUOTE */}
-      <section className="section-pad" style={{ background: "var(--color-espresso)" }}>
-        <div className="container-edn text-center">
-          <div className="eyebrow mb-10">A NOTE FROM THE AUTHOR</div>
-          <blockquote
-            style={{
-              fontFamily: "var(--font-display)",
-              fontStyle: "italic",
-              fontSize: "clamp(24px, 3.4vw, 38px)",
-              color: "var(--color-ivory)",
-              lineHeight: 1.4,
-              maxWidth: 900,
-              margin: "0 auto",
-              fontWeight: 300,
-            }}
-          >
-            "She wanted her personal life to be as<br className="hidden md:inline" /> structured as her work."
-          </blockquote>
-          <div className="eyebrow mt-10" style={{ color: "var(--color-champagne)" }}>— EDENNE LIFE</div>
-        </div>
-      </section>
-
       {/* JOIN THE LIST */}
       <section className="section-pad" style={{ background: "var(--color-parchment)" }}>
         <div className="container-edn text-center">
@@ -137,7 +116,15 @@ function Home() {
           <p style={{ color: "var(--color-mink)", maxWidth: 540, margin: "24px auto 40px", fontSize: 15 }}>
             One email. Five days. A structured re-entry into the standard you set for yourself.
           </p>
-          <EmailForm />
+          <div className="flex justify-center">
+            <Link to="/reset" className="btn-primary">Get the free Reset</Link>
+          </div>
+          <p
+            className="mt-5"
+            style={{ fontSize: 11, letterSpacing: "0.05em", color: "var(--color-mink)" }}
+          >
+            No filler. Unsubscribe at any moment.
+          </p>
         </div>
       </section>
 

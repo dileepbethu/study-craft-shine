@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { EmailForm } from "@/components/edenne/EmailForm";
 
 export const Route = createFileRoute("/reset")({
@@ -14,12 +14,11 @@ export const Route = createFileRoute("/reset")({
 function Reset() {
   return (
     <div style={{ minHeight: "100vh", background: "var(--color-ivory)" }}>
-      {/* No nav header per brief — only minimal brand mark + back link */}
-      <div className="container-edn flex items-center justify-between" style={{ paddingTop: 32, paddingBottom: 32 }}>
-        <Link to="/" style={{ fontFamily: "var(--font-display)", fontSize: 20, color: "var(--color-espresso)" }}>
+      {/* Per brief: /reset is a conversion page — zero navigation. Brand mark only, not a link. */}
+      <div className="container-edn" style={{ paddingTop: 40, paddingBottom: 8, textAlign: "center" }}>
+        <span style={{ fontFamily: "var(--font-display)", fontSize: 20, color: "var(--color-espresso)" }}>
           Edenne Life
-        </Link>
-        <Link to="/" className="eyebrow-mink">← Back</Link>
+        </span>
       </div>
 
       <section style={{ paddingTop: 60, paddingBottom: 80 }}>
@@ -34,6 +33,10 @@ function Reset() {
           </p>
 
           <div className="mt-16">
+            {/* MailerLite embed form mount point.
+                Paste the embed form HTML from MailerLite → Forms → Embedded form
+                inside <div id="mailerlite-embed" /> below to replace the fallback form. */}
+            <div id="mailerlite-embed" />
             <EmailForm label="Send me the Reset" />
           </div>
 
@@ -52,11 +55,11 @@ function Reset() {
 
           <div className="space-y-px" style={{ background: "rgba(212,184,150,0.4)" }}>
             {[
-              ["DAY 01", "Environment", "Reset the surfaces. Calibrate the inputs."],
-              ["DAY 02", "Morning sequence", "Thirty deliberate minutes. Built — not improvised."],
-              ["DAY 03", "Nutrition default", "Remove the daily decision. Install the weekly default."],
-              ["DAY 04", "Wardrobe edit", "An audit. A uniform. A clear surface."],
-              ["DAY 05", "Evening protocol", "Bookend the day. Begin tomorrow already begun."],
+              ["DAY 01", "The Architecture Audit™", "See the structure you are already running — and what it is costing you."],
+              ["DAY 02", "The Base Protocol™", "The non-negotiable thirty minutes that anchor every day."],
+              ["DAY 03", "Nutrition Architecture™", "Remove the daily decision. Install the weekly default."],
+              ["DAY 04", "Wardrobe Architecture™", "An audit. A uniform. A clear surface."],
+              ["DAY 05", "One Standard™", "Higher standards create quieter lives. Set yours."],
             ].map(([d, t, p]) => (
               <div key={d} className="grid grid-cols-12 gap-6 items-baseline" style={{ background: "var(--color-ivory)", padding: "28px 24px" }}>
                 <div className="col-span-3 md:col-span-2 eyebrow">{d}</div>
@@ -74,12 +77,10 @@ function Reset() {
         </div>
       </section>
 
-      <footer style={{ background: "var(--color-espresso)", color: "var(--color-ash)", padding: "32px 0" }}>
-        <div className="container-edn flex flex-col md:flex-row justify-between gap-3" style={{ fontSize: 11, letterSpacing: "0.1em" }}>
-          <span>© 2026 EDENNE LIFE</span>
-          <span>HELLO@EDENNELIFE.CO</span>
-        </div>
-      </footer>
+      {/* No footer / no navigation on /reset — single conversion goal. */}
+      <div style={{ padding: "32px 0", textAlign: "center", fontSize: 11, letterSpacing: "0.1em", color: "var(--color-mink)" }}>
+        © 2026 EDENNE LIFE
+      </div>
     </div>
   );
 }
