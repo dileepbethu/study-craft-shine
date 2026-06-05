@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { EmailForm } from "@/components/edenne/EmailForm";
+import logo from "@/assets/edenne-life-logo.jpeg.asset.json";
 
 export const Route = createFileRoute("/reset")({
   component: Reset,
@@ -16,9 +17,7 @@ function Reset() {
     <div style={{ minHeight: "100vh", background: "var(--color-ivory)" }}>
       {/* Per brief: /reset is a conversion page — zero navigation. Brand mark only, not a link. */}
       <div className="container-edn" style={{ paddingTop: 40, paddingBottom: 8, textAlign: "center" }}>
-        <span style={{ fontFamily: "var(--font-display)", fontSize: 20, color: "var(--color-espresso)" }}>
-          Edenne Life
-        </span>
+        <img src={logo.url} alt="Edenne Life" style={{ height: 36, width: "auto", display: "inline-block" }} />
       </div>
 
       <section style={{ paddingTop: 60, paddingBottom: 80 }}>
