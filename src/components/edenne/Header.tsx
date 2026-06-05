@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import logo from "@/assets/edenne-life-logo.jpeg.asset.json";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -22,10 +23,8 @@ export function Header() {
       }}
     >
       <div className="container-edn flex items-center justify-between" style={{ height: 76 }}>
-        <Link to="/" className="flex items-baseline gap-3" onClick={() => setOpen(false)}>
-          <span style={{ fontFamily: "var(--font-display)", fontSize: 24, color: "var(--color-espresso)", fontWeight: 300, letterSpacing: "0.01em" }}>
-            Edenne Life
-          </span>
+        <Link to="/" className="flex items-center" onClick={() => setOpen(false)} aria-label="Edenne Life">
+          <img src={logo.url} alt="Edenne Life" style={{ height: 40, width: "auto", display: "block" }} />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">

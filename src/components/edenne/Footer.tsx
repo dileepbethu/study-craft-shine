@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/edenne-life-logo.jpeg.asset.json";
 
 export function Footer() {
   return (
@@ -6,9 +7,7 @@ export function Footer() {
       <div className="container-edn section-pad">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
-            <div style={{ fontFamily: "var(--font-display)", fontSize: 32, color: "var(--color-ivory)" }}>
-              Edenne Life
-            </div>
+            <img src={logo.url} alt="Edenne Life" style={{ height: 56, width: "auto", display: "block" }} />
             <p className="tagline mt-3" style={{ color: "var(--color-ash)", fontSize: 16 }}>
               A structured lifestyle system for the woman<br />who holds herself to a higher standard.
             </p>
