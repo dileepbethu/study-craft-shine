@@ -3,5 +3,10 @@
   "name": "study-craft-shine",
   "compatibility_date": "2025-09-24",
   "compatibility_flags": ["nodejs_compat"],
-  "main": "src/server.ts",
+  "main": "dist/server/index.mjs",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "dist/client"
+  },
+  "no_bundle": true,
 }
