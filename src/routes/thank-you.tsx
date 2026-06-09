@@ -25,7 +25,7 @@ function ThankYou() {
         <div className="container-edn text-center max-w-2xl mx-auto">
           <div className="eyebrow mb-10" style={{ color: "var(--color-champagne)" }}>YOU ARE IN</div>
           <h1 style={{ fontSize: "clamp(36px, 6vw, 60px)", color: "var(--color-ivory)" }}>
-            Check your inbox.<br />Your first reset<br />arrives tomorrow morning.
+            Check your inbox.<br />Your first reset<br />arrives.
           </h1>
           <p className="tagline mt-8" style={{ fontSize: 18, color: "var(--color-ash)" }}>
             If you don't see it within a few minutes, look in promotions or spam and mark it primary.
