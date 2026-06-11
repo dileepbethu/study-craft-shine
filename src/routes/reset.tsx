@@ -50,7 +50,7 @@ function Reset() {
         <div className="container-edn max-w-3xl">
           <div className="text-center mb-14">
             <div className="eyebrow-mink mb-6">WHAT YOU RECEIVE</div>
-            <h2 style={{ fontSize: "clamp(26px, 3.6vw, 36px)" }}>One email each morning. Five days.</h2>
+            <h2 style={{ fontSize: "clamp(26px, 3.6vw, 36px)" }}>One protocol each morning. Five days.</h2>
           </div>
 
           <div className="space-y-px" style={{ background: "rgba(212,184,150,0.4)" }}>
