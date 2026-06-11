@@ -64,7 +64,7 @@ function Home() {
       <section className="section-pad" style={{ background: "var(--color-parchment)" }}>
         <div className="container-edn">
           <div className="text-center mb-20">
-            <div className="eyebrow-mink mb-6">SECTION ONE · THE FRAMEWORK</div>
+            <div className="eyebrow-mink mb-6">THE FRAMEWORK</div>
             <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)" }}>
               Six Systems. One Operating Standard.
             </h2>
