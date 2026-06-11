@@ -24,7 +24,7 @@ export function EmailForm({ variant = "light", label = "Get the free Reset" }: {
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="your professional email"
+          placeholder="your email"
           aria-label="Email address"
           style={{
             background: "transparent",
