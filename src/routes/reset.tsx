@@ -33,10 +33,8 @@ function Reset() {
           </p>
 
           <div className="mt-16">
-            {/* MailerLite embed form mount point.
-                Paste the embed form HTML from MailerLite → Forms → Embedded form
-                inside <div id="mailerlite-embed" /> below to replace the fallback form. */}
-            <div id="mailerlite-embed" />
+            {/* Branded form wired to the MailerLite embedded form endpoint
+                (group: Lead Magnet — 5-Day Reset). See EmailForm.tsx. */}
             <EmailForm label="Send me the Reset" />
           </div>
 
