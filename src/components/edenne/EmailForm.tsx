@@ -30,7 +30,7 @@ export function EmailForm({ variant = "light", label = "Get the free Reset" }: {
       if (res.ok && data?.success !== false) {
         navigate({ to: "/thank-you" });
       } else {
-        setError("Something went wrong. Please try again.");
+        setError(data?.errors?.fields?.email?.[0] ?? "Something went wrong. Please try again.");
         setLoading(false);
       }
     } catch {
