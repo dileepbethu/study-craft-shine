@@ -72,6 +72,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+      name: "p:domain_verify",
+      content: "8e504bed3cab65c4534244051f2e156a",
+      },
       { title: "Edenne Life — The Executive Reset Blueprint" },
       { name: "description", content: "A structured lifestyle system for the woman who holds herself to a higher standard." },
       { name: "author", content: "Edenne Life" },
